@@ -4,10 +4,10 @@ var mongoose = require("mongoose")
 var cheerio = require("cheerio")
 var request = require("request")
 
+var PORT =process.env.PORT || 3000
+
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraperdb";
 
-
-var PORT = 3000 || process.env.MONGODB_URI
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
