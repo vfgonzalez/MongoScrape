@@ -4,13 +4,13 @@ var mongoose = require("mongoose")
 var cheerio = require("cheerio")
 var request = require("request")
 
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraperdb";
 
 
 var PORT = 3000 || process.env.PORT
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraperdb";
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
 
 var app = express()
 
