@@ -7,7 +7,7 @@ var request = require("request")
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraperdb";
 
 
-var PORT = 3000 || process.env.PORT
+var PORT = 3000 || process.env.MONGODB_URI
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
