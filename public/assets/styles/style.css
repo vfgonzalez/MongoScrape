@@ -1,0 +1,40 @@
+body{
+    background-color: gray;
+    font-family: 'Arvo', serif;
+}
+#title{
+    background-image: url("../images/newspaper.jpg");
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    padding: 200px 0px;
+    position: sticky;
+    color: whitesmoke;
+}
+h1,h4{
+    font-family: 'IM Fell French Canon SC', serif;
+
+}
+.save-tag{
+float: right;
+overflow: auto;
+display: inline-flex;
+font-family: 'Arvo', serif;
+}
+.note-tag{
+    float: right;
+    overflow: auto;
+    display: inline-flex;
+    font-family: 'Arvo', serif;
+}
+#articles{
+    float: left;
+    clear: left;
+    overflow: auto;
+    
+}
+h3,h2{
+    font-family: 'Courgette', cursive;
+    
+}

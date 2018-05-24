@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MongoScrape</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Courgette|IM+Fell+French+Canon+SC|Kavivanar" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NavBar -->
+
+    <div class="top-bar" data-sticky>
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Mongo Scraper</li>
+                <li>
+                    <a class="primary label" href="/">Home</a>
+                </li>
+                <li>
+                    <a href="#">Saved Articles</a>
+                </li>
+                <li>
+                    <a class="alert label" href="/scrape">Scrape New Articles</a>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li>
+                    <button type="button" class="button secondary label">Back to Top</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- title section -->
+    <section id="title">
+        <h1 class="tile-section">
+            Mongo Scraper
+        </h1>
+        <h4 class="tile-section">
+            TechCrunch Edition
+        </h4>
+    </section>
+<br>
+    <!-- Article Posts **Dynamic inputs -->
+    <!-- <div class="scraped-articles">
+
+        <div class="callout large">
+            <a class="label success save-tag" href="#">Save Article</a>
+            <a class="link" href="{link here}"><h3 class="title">Main Title Goes Here</h3></a>
+            <h5 class="summary">Short Intro Here...</h5>
+        </div>
+    </div> -->
+    <div class="grid-x">
+
+        <div id="notes">
+            
+        </div>
+        <div id="articles">
+            <!-- Articles to be placed HERE -->
+        </div>
+        
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
