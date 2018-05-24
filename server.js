@@ -4,7 +4,11 @@ var mongoose = require("mongoose")
 var cheerio = require("cheerio")
 var request = require("request")
 
-var PORT = 3000
+mongoose.Promise = Promise;
+mongoose.connect(MONGODB_URI);
+
+
+var PORT = 3000 || process.env.PORT
 
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraperdb";
 
@@ -17,8 +21,6 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 // mongoose.connect("mongodb://localhost/mongoscraperdb");
 
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI);
 
 
 require("./routes/api-routes.js")(app);
